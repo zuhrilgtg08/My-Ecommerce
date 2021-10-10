@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ecommerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+</head>
+<body>
+    <!--awal header-->
+    <header class="header">
+        <div class="fas fa-bars" id="menu-btn"></div>
+
+        <a href="#" class="logo"> <span>allin</span>one </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#vehicles">vehicles</a>
+            <a href="#service">service</a>
+            <a href="#features">features</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div id="login-btn">
+            <button class="btn">login</button>
+            <i class="far fa-user"></i>
+        </div>
+    </header>
+    <!--akhir header-->
+
+    <!--awal form login container-->
+    <div class="container-login-form">
+        <span id="tutup-login" class="fas fa-times"></span>
+
+        <form action="">
+            <h3>user login</h3>
+            <input type="email" placeholder="email" class="kotak">
+            <input type="password" placeholder="password" class="kotak">
+            <p> forget your password ? <a href="#">clck here</a> </p>
+            <input type="submit" value="login" class="btn">
+            <p> or login with </p>
+            <div class="tombol">
+                <a href="www.facebook.com" class="btn"> google </a>
+                <a href="www.google.com" class="btn"> facebook </a>
+            </div>
+            <p> don't have account <a href="#">create new account</a> </p>
+        </form>
+    </div>
+    <!--akhir form login container-->
+
+    <!--awal section home-->
+    <section class="home" id="home">
+        <h3 data-speed="-2" class="home-parallax">find your cars</h3>
+        <img src="img/home-img.png" alt="efek parallax" class="home-parallax" data-speed="5">
+        <a href="#" data-speed="7" class="btn home-parallax">explore cars</a>
+    </section>
+    <!--akhir section home-->
+
+    <!--awal section container icons-->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>150</h3>
+                <p>branches</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>5509</h3>
+                <p>cars unit</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>476</h3>
+                <p>happy client</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>1500</h3>
+                <p>arrival cars</p>
+            </div>
+        </div>
+    </section>
+    <!--akhir section container icons-->
+
+    <!--awal section vehicles-->
+    <section class="vehicles" id="vehicles">
+        <h1 class="heading"> famous <span>vehicle</span> </h1>
+
+        <div class="swiper vehicles-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="img/vehicle-1.png" alt="1">
+                    <div class="content">
+                        <h3>Subaru WRX STI</h3>
+                        <div class="harga"> <span>price : </span> $102,000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2021
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> fuel
+                            <span class="fas fa-circle"></span> 189mph
+                        </p>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/vehicle-2.png" alt="2">
+                    <div class="content">
+                        <h3>Mazda RX-9</h3>
+                        <div class="harga"> <span>price : </span> $119,000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2022
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> usage
+                            <span class="fas fa-circle"></span> 209mph
+                        </p>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/vehicle-3.png" alt="3">
+                    <div class="content">
+                        <h3>Ford Mustang</h3>
+                        <div class="harga"> <span>price : </span> $207,000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2023
+                            <span class="fas fa-circle"></span> solar
+                            <span class="fas fa-circle"></span> power usage
+                            <span class="fas fa-circle"></span> 302mph
+                        </p>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/vehicle-4.png" alt="4">
+                    <div class="content">
+                        <h3>Volkswagen Golf R</h3>
+                        <div class="harga"> <span>price : </span> $402,000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2024
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> usage
+                            <span class="fas fa-circle"></span> 400mph
+                        </p>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/vehicle-5.png" alt="5">
+                    <div class="content">
+                        <h3>Porsche 911 Hybrid</h3>
+                        <div class="harga"> <span>price : </span> $794,000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2025
+                            <span class="fas fa-circle"></span> hybrid 
+                            <span class="fas fa-circle"></span> usage
+                            <span class="fas fa-circle"></span> 480mph
+                        </p>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/vehicle-6.png" alt="6">
+                    <div class="content">
+                        <h3>Peugeot RCZ</h3>
+                        <div class="harga"> <span>price : </span> $884,000/- </div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2026
+                            <span class="fas fa-circle"></span> manual 
+                            <span class="fas fa-circle"></span> usage
+                            <span class="fas fa-circle"></span> 477mph
+                        </p>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--akhir section vehicles-->
+
+    <!--awal section service-->
+    <section class="service" id="service">
+        <h1 class="heading"> our <span>service</span> </h1>
+
+        <div class="container">
+            <div class="kotak">
+                <i class="fas fa-car"></i>
+                <h3>car sell</h3>
+                <p>We provide affordable car deals and discounts</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="kotak">
+                <i class="fas fa-tools"></i>
+                <h3>spare parts repair</h3>
+                <p>especially for our loyal customers, we have spare parts repair</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="kotak">
+                <i class="fas fa-car-crash"></i>
+                <h3>warranty car</h3>
+                <p>we will cover the damage to the car from the buyer as much as 70%</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="kotak">
+                <i class="fas fa-car-battery"></i>
+                <h3>accumulator repair</h3>
+                <p>We provide accumulator repair and replacement</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="kotak">
+                <i class="fas fa-gas-pump"></i>
+                <h3>car oil change</h3>
+                <p>We are ready to serve oil changes every mileage</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="kotak">
+                <i class="fas fa-headset"></i>
+                <h3>24 hours service</h3>
+                <p>24 hours we are ready to serve problems with your car</p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+        </div>
+    </section>
+    <!--akhir section service-->
+
+    <!--awal section features-->
+    <section class="features" id="features">
+        <h1 class="heading"> cars <span>features</span> </h1>
+
+        <div class="swiper features-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="img/car-1.png" alt="1">
+                    <div class="content">
+                        <h3>Jaguar</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="harga">$55,000/-</div>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/car-2.png" alt="2">
+                    <div class="content">
+                        <h3>Chevrolet</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="harga">$155,000/-</div>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/car-3.png" alt="3">
+                    <div class="content">
+                        <h3>Hummer</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="harga">$275,000/-</div>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/car-4.png" alt="4">
+                    <div class="content">
+                        <h3>Koenigsegg</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="harga">$307,000/-</div>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper features-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="img/car-5.png" alt="5">
+                    <div class="content">
+                        <h3>Bugatti</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="harga">$753,000/-</div>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/car-6.png" alt="6">
+                    <div class="content">
+                        <h3>Datsun</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="harga">$365,000/-</div>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/car-7.png" alt="7">
+                    <div class="content">
+                        <h3>Hyundai</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="harga">$475,000/-</div>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/car-8.png" alt="8">
+                    <div class="content">
+                        <h3>Lexus</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="harga">$607,000/-</div>
+                        <a href="#" class="btn">buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--akhir section features-->
+
+    <!--awal section form-->
+    <section class="form">
+        <h3>subscribe for last update</h3>
+        <p>don't forget to subscribe for our latest news</p>
+
+        <form action="">
+            <input type="email" placeholder="your email">
+            <input type="submit" value="subscribe">
+        </form>
+    </section>
+    <!--akhir section form-->
+
+    <!--awal section review-->
+    <section class="review" id="review">
+        <h1 class="heading">customer <span>review</span> </h1>
+
+        <div class="swiper slider-review">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="img/pic (1).jpg" alt="1">
+                    <div class="content">
+                        <p>There are a lot of offers on offer. especially when there is an event, there must be a lot</p>
+                        <h3>clary indah</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/pic (2).jpg" alt="2">
+                    <div class="content">
+                        <p>there are so many cool and beautiful sports cars there, let's hurry up</p>
+                        <h3>indah sari</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/pic (3).jpg" alt="3">
+                    <div class="content">
+                        <p>the care provided is of very good quality and good stuff</p>
+                        <h3>silvia bahri</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/pic (4).jpg" alt="4">
+                    <div class="content">
+                        <p>the guarantee is very guaranteed and can be trusted</p>
+                        <h3>dewi asri</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/pic (5).jpg" alt="5">
+                    <div class="content">
+                        <p>the service provided is very satisfying guaranteed safe</p>
+                        <h3>nabila</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="img/pic-6.png" alt="6">
+                    <div class="content">
+                        <p>my dream car turns out to be a lot there and it's really good</p>
+                        <h3>melati azizah</h3>
+                        <div class="bintang">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagintaion"></div>
+        </div>
+    </section>
+    <!--akhir section review-->
+
+    <!--awal section contact-->
+    <section class="contact" id="contact">
+        <h1 class="heading"> our <span>contact</span> </h1>
+
+        <div class="baris">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15831.408382313506!2d112.7183755197754!3d-7.257668599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1633876181733!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+
+            <form action="">
+                <h3>contact us</h3>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <textarea name="" id="" cols="30" rows="10" placeholder="message" class="box"></textarea>
+                <button class="btn" type="submit">send</button>
+            </form>
+        </div>
+    </section>
+    <!--akhir section contact-->
+
+    <!--awal section footer-->
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="kotak">
+                <h3>branches</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> bandung </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> surabaya </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> semarang </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> bekasi </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> malang </a>
+            </div>
+
+            <div class="kotak">
+                <h3>quick link</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#vehicles"> <i class="fas fa-arrow-right"></i> vehicles </a>
+                <a href="#service"> <i class="fas fa-arrow-right"></i> service </a>
+                <a href="#features"> <i class="fas fa-arrow-right"></i> features </a>
+                <a href="#review"> <i class="fas fa-arrow-right"></i> review </a>
+                <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
+            </div>
+
+            <div class="kotak">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone-alt"></i> 085843960995 </a>
+                <a href="#"> <i class="fas fa-phone-alt"></i> 082334301664 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> zuhrilfahrizal684@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> surabaya, jl gundih 3 </a>
+            </div>
+
+            <div class="kotak">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            </div>
+        </div>
+    <div class="akhir"> created by. ahmad zuhril | all right reserved </div>
+    </section>
+    <!--akhir section footer-->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

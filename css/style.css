@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --kuning:#f9d806;
+    --kuning-cerah:#ffee80;
+    --hitam:#130f40;
+    --warna-cerah:#666;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+} 
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--hitam);
+}
+
+.heading span{
+    position: relative;
+    z-index: 0;
+}
+
+.heading span::before{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--kuning-cerah);
+    z-index: -1;
+    clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--kuning-cerah);
+    color: var(--hitam);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn:hover{
+    background: var(--kuning);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 9%;
+    z-index: 1000;
+    background: #fff;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--hitam);
+    font-weight: bold;
+}
+
+.header .logo span{
+    color: var(--kuning);
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: var(--hitam);
+}
+
+.header .navbar a:hover{
+    color: var(--kuning);
+}
+
+#login-btn .btn{
+    margin-top: 0;
+}
+
+#login-btn i{
+    display: none;
+    font-size: 2.5rem;
+    color: var(--warna-cerah);
+}
+
+.header.active{
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color: var(--warna-cerah);
+    display: none;
+}
+
+.container-login-form{
+    position: fixed;
+    top: -105%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.9);
+    z-index: 10000;
+}
+
+.container-login-form.active{
+    top: 0;
+}
+
+.container-login-form form{
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    width: 40rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    background: #fff;
+}
+
+.container-login-form .tombol{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.container-login-form form .btn{
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+.container-login-form form .kotak{
+    margin: .7rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--hitam);
+    text-transform: none;
+    border: var(--border);
+    padding: 1rem 1.2rem;
+    border-radius: .5rem;
+}
+
+.container-login-form form p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--warna-cerah);
+}
+
+.container-login-form form p a{
+    color: var(--kuning);
+    text-decoration: underline;
+}
+
+.container-login-form form h3{
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--hitam);
+    text-transform: uppercase;
+}
+
+.container-login-form #tutup-login{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: var(--hitam);
+    cursor: pointer;
+}
+
+.home{
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.home h3{
+    color: var(--hitam);
+    font-size: 7.5vw;
+    text-transform: uppercase;
+}
+
+.home img{
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #eee;
+}
+
+.icons-container .icons{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.icons-container .icons i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    color: var(--hitam);
+    background: #eee;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.icons-container .icons .content h3{
+    font-size: 2.5rem;
+    color: var(--kuning);
+}
+
+.icons-container .icons .content p{
+    font-size: 1.5rem;
+    color: var(--warna-cerah);
+}
+
+.icons-container .icons:hover{
+    background: var(--hitam);
+}
+
+.icons-container .icons:hover i{
+    background: var(--kuning);
+}
+
+.icons-container .icons:hover .content h3{
+    color: #fff;
+}
+
+.icons-container .icons:hover .content p{
+    color: #eee;
+}
+
+.vehicles .vehicles-slider{
+    padding-bottom: 5rem;
+}
+
+.vehicles .vehicles-slider .box{
+    text-align: center;
+}
+
+.vehicles .vehicles-slider .box img{
+    width: 100%;
+    transform: scale(0.8);
+    opacity: .5;
+}
+
+.vehicles .vehicles-slider .box .content{
+    padding-top: 1rem;
+    transform: scale(0);
+}
+
+.vehicles .vehicles-slider .swiper-slide-active .content{
+    transform: scale(1);
+}
+
+.vehicles .vehicles-slider .swiper-slide-active img{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.vehicles .vehicles-slider .box .content h3{
+    font-size: 2.5rem;
+    color: var(--hitam);
+}
+
+.vehicles .vehicles-slider .box .content .harga{
+    font-size: 2.2rem;
+    color: var(--kuning);
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+
+.vehicles .vehicles-slider .box .content .harga span{
+    color: var(--warna-cerah);
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.vehicles .vehicles-slider .box .content p{
+    font-size: 1.6rem;
+    color: var(--warna-cerah);
+    padding: 1rem 0;
+    padding-top: 1.5rem;
+    border-top: var(--border);
+}
+
+.vehicles .vehicles-slider .box .content span{
+    font-size: 1rem;
+    color: var(--kuning);
+    padding: 0 .5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--kuning);
+}
+
+.service .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    gap: 1.5rem;
+}
+
+.service .container .kotak{
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align: center;
+}
+
+.service .container .kotak i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: var(--kuning);
+    color: var(--hitam);
+}
+
+.service .container .kotak h3{
+    font-size: 2.2rem;
+    color: var(--hitam);
+}
+
+.service .container .kotak p{
+    line-height: 1.8;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: var(--warna-cerah);
+}
+
+.service .container .kotak:hover{
+    background: var(--hitam);
+    cursor: pointer;
+}
+
+.service .container .kotak:hover h3{
+    color: #fff;
+}
+
+.service .container .kotak:hover p{
+    color: #eee;
+}
+
+.features .features-slider{
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+
+.features .features-slider .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.features .features-slider .box img{
+    height: 15rem;
+}
+
+.features .features-slider .box:hover img{
+    transform: scale(0.9);
+}
+
+.features .features-slider .box .content h3{
+    font-size: 2.2rem;
+    color: var(--hitam);
+}
+
+.features .features-slider .box .content .bintang{
+    padding: 1rem 0;
+}
+
+.features .features-slider .box .content .bintang i{
+    font-size: 1.7rem;
+    color: var(--kuning);
+}
+
+.features .features-slider .box .content .harga{
+    font-size: 2.5rem;
+    color: var(--hitam);
+}
+
+.form{
+    padding: 6rem 2rem;
+    background: url(../img/letter-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.form h3{
+    font-size: 3rem;
+    color: var(--hitam);
+}
+
+.form p{
+    font-size: 1.5rem;
+    color: var(--warna-cerah);
+    padding: 1rem 0;
+}
+
+.form form{
+    max-width: 60rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 5rem;
+    overflow: hidden;
+    display: flex;
+    margin: 1rem auto;
+    box-shadow: var(--box-shadow);
+}
+
+.form form input[type="email"]{
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    color: var(--hitam);
+    text-transform: none;
+}
+
+.form form input[type="submit"]{
+    height: 100%;
+    width: 17rem;
+    font-size: 1.7rem;
+    color: var(--hitam);
+    background: var(--kuning-cerah);
+    cursor: pointer;
+}
+
+.form form input[type="submit"]:hover{
+    background: var(--kuning);
+}
+
+.review .slider-review{
+    padding-bottom: 3rem;
+}
+
+.review .slider-review .box{
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0;
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+.review .slider-review .swiper-slide-active{
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.review .slider-review .box img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .slider-review .box .content p{
+    color: var(--warna-cerah);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
+.review .slider-review .box .content h3{
+    color: var(--hitam);
+    font-size: 2.2rem;
+    padding-bottom: .5rem;
+}
+
+.review .slider-review .box .content .bintang i{
+    color: var(--kuning);
+    font-size: 1.7rem;
+}
+
+.contact .baris{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .baris .map{
+    flex: 1 1 42rem;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.contact .baris form{
+    padding: 2rem;
+    flex: 1 1 42rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.contact .baris form h3{
+    font-size: 3rem;
+    color: var(--hitam);
+    padding-bottom: 1rem;
+}
+
+.contact .baris form .box{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    text-transform: none;
+    border: var(--border);
+    margin: .7rem 0;
+}
+
+.contact .baris form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.footer{
+    background: var(--kuning-cerah);
+    padding-bottom: 8rem;
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .container .kotak h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--hitam);
+}
+
+.footer .container .kotak a{
+    display: block;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    color: var(--warna-cerah);
+}
+
+.footer .container .kotak a i{
+    padding-right: .5rem;
+    color: var(--hitam);
+}
+
+.footer .container .kotak a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .akhir{
+    text-align: center;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color: var(--hitam);
+}
+
+/* media queries */
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    .header.active{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    #menu-btn{
+        display: block;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    #login-btn .btn{
+        display: none;
+    }
+
+    #login-btn i{
+        display: block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar a {
+        margin: 2rem;
+        display: block;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+}
